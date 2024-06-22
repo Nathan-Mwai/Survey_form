@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Naytte's Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h1 id="title">Nathan's Survey Form</h1>
+        <p id="description">Thank you for supporting my studies</p>
+        <form id="survey-form" method="post">
+            <fieldset>
+                <label for="name" id="name-label">Enter Your Name:
+                    <input id="name" type="text" placeholder="Enter your full name" required />
+                </label>
+                <label for="email" id="email-label">Enter Your Email:
+                    <input id="email" type="email" placeholder="Enter your Email address" required/>
+                </label>
+                <label for="number" id="number-label">Enter your Age:
+                    <input id="number" type="number" min="13" max="99" placeholder="Age" required />
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What would you like for me to improve on?
+                    <select id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">My representation</option>
+                        <option value="2">In time management</option>
+                        <option value="3">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you like to see more from my blog?</legend>
+                <label for="definitely">
+                    <input id="definitely" type="radio" name="see-more" checked class="inline" value="Definitely" /> Definitely </label>
+                <label for="Maybe">
+                    <input id="maybe" type="radio" name="see-more" class="inline" value="Maybe"/> Maybe </label>
+                <label for="not sure">
+                    <input id="not sure" type="radio" name="see-more" class="inline" value="Not sure"/>Not sure </label>
+            </fieldset>
+            <fieldset>
+                <legend>Which other sites would you like to see my blogs?</legend>
+                <label for="pinterest">
+                    <input id=pinterest type="checkbox" name="see-my-blogs" class="inline" value="Pinterest" />Pinterest</label>
+                <label for="instagram">      
+                    <input id="instagram" type="checkbox" name="see-my-blogs" class="inline" value="Instagram" />Instagram</label>
+                <label for="facebook">
+                    <input id="facebook" type="checkbox" name="see-my-blogs" class="inline" value="Facebook" />Facebook</label>
+                <label for="tiktok">
+                    <input id="tiktok" type="checkbox" name="see-my-blogs" class="inline" value="Tiktok" />Tiktok</label>
+                <label for="youtube">
+                    <input id="youtube" type="checkbox" name="see-my-blogs" class="inline" value="YouTube" />YouTube</label>    
+            </fieldset>
+            <fieldset>
+                <label for="comments and suggestions">Any comments or suggestions:
+                    <textarea id="comments and suggestions" rows="7" cols="30" placeholder="Add your comments and suggestions here..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
